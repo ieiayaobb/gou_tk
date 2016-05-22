@@ -1,9 +1,7 @@
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 
-from pyquery import PyQuery as pyq
-
-from web.models import Shop, Good
+from web.models import Shop
 from web.parser import parse_taobao
 
 
