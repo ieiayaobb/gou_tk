@@ -4,14 +4,17 @@ from django.db import models
 
 class Shop(models.Model):
     name = models.CharField(max_length=64, default='')
+    url = models.CharField(max_length=2048)
 
     def __unicode__(self):
         return self.name
 
 
-class Good(models.Model):
+class Good():
     shop = models.ForeignKey(Shop)
+    img = models.CharField(max_length=2048)
     url = models.CharField(max_length=2048)
+
 
 
 class Comment(models.Model):

@@ -79,8 +79,9 @@
                     <div class="box clear">
                         <div class="img-box clear">
                             {% for good in shop.goods %}
-                                <a href="/shop/{{ good.id }}" class="img-show">
-                                    <img class="pure-img lazy" data-original="{{ good.url }}" width="160" height="160"/>
+{#                                <a href="/shop/{{ good.id }}" class="img-show">#}
+                                <a href="https://{{ good.url }}" target="_blank" class="img-show">
+                                    <img class="pure-img lazy" data-original="http://{{ good.img }}" width="160" height="160"/>
                                 </a>
                             {% endfor %}
                         </div>
