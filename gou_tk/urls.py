@@ -16,10 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from web.views import get_index
+from web.views import get_index, get_shop, get_good
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', get_index),
-
+    url(r'^shop/(.*)$', get_shop),
+    url(r'^good/(.*)$', get_good),
 ]

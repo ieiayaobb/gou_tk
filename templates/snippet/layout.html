@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购痛快</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/pure-min.css">
+    <script type="text/javascript" src="/static/js/jquery.min.js" ></script>
+    <script type="text/javascript" src="/static/js/jquery.lazyload.js" ></script>
+
+    <script>
+        $(document).ready(function(){
+            $("img.lazy").lazyload();
+        })
+    </script>
+    {% block stylesheet %}{% endblock %}
+    {% block javascript %}{% endblock %}
+</head>
+<body>
+    <div class="pure-menu pure-menu-horizontal">
+        <a href="#" class="pure-menu-heading pure-menu-link">
+            <h1>购痛快</h1>
+        </a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item">
+                <a href="#" class="pure-menu-link">
+                    <h2>女装</h2>
+                </a>
+            </li>
+{#            <li class="pure-menu-item">#}
+{#                <a href="#" class="pure-menu-link">#}
+{#                    <h2>明星同款</h2>#}
+{#                </a>#}
+{#            </li>#}
+{#            <li class="pure-menu-item">#}
+{#                <a href="#" class="pure-menu-link">#}
+{#                    <h2>经典同款</h2>#}
+{#                </a>#}
+{#            </li>#}
+        </ul>
+    </div>
+    {% block main %}{% endblock %}
+    {% include "snippet/footer.html" %}
+</body>
+</html>
