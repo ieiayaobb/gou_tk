@@ -72,6 +72,7 @@
 {% endblock %}
 {% block main %}
 <div class="container">
+
     {% for each_shops_group in shop_groups %}
         <div class="pure-g">
             {% for shop in each_shops_group %}
@@ -107,5 +108,14 @@
             {% endfor %}
         </div>
     {% endfor %}
+    <ul class="pure-paginator">
+        <li><a class="pure-button prev" href="#">&#171;</a></li>
+        <li><a class="pure-button" href="#">1</a></li>
+        <li><a class="pure-button pure-button-active" href="#">2</a></li>
+        <li><a class="pure-button" href="#">3</a></li>
+        <li><a class="pure-button" href="#">4</a></li>
+        <li><a class="pure-button" href="#">5</a></li>
+        <li><a class="pure-button next" href="#">&#187;</a></li>
+    </ul>
 </div>
 {% endblock %}
